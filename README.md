@@ -2,11 +2,12 @@
 
 <div align="center">
 
-![Divine Hordes Logo](https://img.shields.io/badge/Divine%20Hordes-v2.4.0-gold?style=for-the-badge&logo=minecraft)
+![Divine Hordes Logo](https://img.shields.io/badge/Divine%20Hordes-v2.5.0-gold?style=for-the-badge&logo=minecraft)
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.18.2--1.21.5-green?style=for-the-badge)
 ![Build Status](https://img.shields.io/badge/Build-Production%20Ready-brightgreen?style=for-the-badge)
 ![Downloads](https://img.shields.io/badge/Downloads-10K+-blue?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-17--21+-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 **🎮 The Ultimate Minecraft Challenge Plugin**
 
@@ -26,16 +27,16 @@ Divine Hordes transforms your Minecraft server into an epic battleground where p
 
 | Feature | Description |
 |---------|-------------|
-| 🏺 **Dynamic Offering System** | Randomized item requirements with history tracking |
-| 🗡️ **Enhanced Horde Mechanics** | Balanced mob spawning with real-time damage feedback |
+| 🏺 **Dynamic Offering System** | Randomized item requirements with history tracking to prevent duplicates |
+| 🗡️ **Enhanced Horde Mechanics** | Balanced mob spawning with real-time damage feedback and sleep prevention |
 | 🧠 **AI Divine Personality** | 124+ unique taunting messages across 6 categories |
-| 📊 **Adaptive Difficulty** | 9-level system with real-time scaling |
-| 🎯 **Smart Navigation** | Compass targeting with distance indicators |
-| 📦 **Bounty Box System** | Craftable delay boxes for strategic gameplay |
-| 🖥️ **Comprehensive GUI** | All-in-one control panel with admin tools |
-| 🔧 **Dual Play Modes** | Normal/Gun Mod with customized scaling |
-| 👑 **Admin Controls** | Complete server management tools |
-| 🛡️ **Memory Management** | Auto-optimization with complete cleanup |
+| 📊 **Adaptive Difficulty** | 9-level system with real-time scaling based on players and equipment |
+| 🎯 **Smart Navigation** | Compass targeting with distance indicators and XP-based teleportation |
+| 📦 **Bounty Box System** | Craftable delay boxes for strategic gameplay with 30-minute extensions |
+| 🖥️ **Comprehensive GUI** | All-in-one control panel with admin tools and real-time monitoring |
+| 🔧 **Dual Play Modes** | Normal/Gun Mod with customized scaling for different server types |
+| 👑 **Admin Controls** | Complete server management with difficulty and spawn overrides |
+| 🛡️ **Memory Management** | Auto-optimization with complete cleanup and bounded collections |
 
 ---
 
@@ -48,7 +49,7 @@ Divine Hordes transforms your Minecraft server into an epic battleground where p
 - **Dependencies**: None! Completely standalone
 
 ### 📥 Installation
-1. Download the latest `divine-hordes-2.4.0.jar` from [releases](../../releases/latest)
+1. Download the latest `divine-hordes-2.5.0.jar` from [releases](../../releases/latest)
 2. Place in your server's `plugins/` folder
 3. Start/restart your server
 4. Configure via GUI (`/dh`) or edit `config.yml`
@@ -76,27 +77,28 @@ Divine Hordes transforms your Minecraft server into an epic battleground where p
 - **Smart Spawning**: Mobs appear 20-40 blocks away for tactical engagement
 - **Damage Feedback**: Real-time action bar showing damage dealt and mob HP
 - **Progressive Difficulty**: Harder challenges as players improve
+- **Sleep Prevention**: Players cannot sleep during events (spawn point setting still works)
 - **Team Coordination**: Multiple players face proportionally larger hordes
 
 ### 📊 Difficulty Scaling
 The plugin intelligently adjusts challenge based on:
-- **Player Count**: More players = more mobs (20% per player)
+- **Player Count**: More players = more mobs (20% per player, capped at 100%)
 - **Equipment Quality**: Better gear = tougher challenges
 - **Experience Levels**: Higher XP = increased difficulty
 - **Time Progression**: Events get harder over time
 
 ---
 
-## 🌟 What's New in v2.4.0
+## 🌟 What's New in v2.5.0
 
 ### 🔧 Major Improvements
-- **🚀 Production Ready**: Complete memory management and thread safety
-- **⚔️ Combat Enhancement**: Optimized spawn distances and damage feedback
-- **🎯 Balance Updates**: Reduced rewards, improved progression
-- **🔄 History System**: No duplicate offerings between events
-- **🛡️ Baby Zombie Protection**: Converted to adults until Hard difficulty
-- **☕ Java 17-21+ Support**: Forward compatibility
-- **🗑️ ZMenu Removal**: No external dependencies
+- **🛏️ Sleep Prevention System**: Players cannot sleep during events but can still set spawn points
+- **🛡️ Enhanced Block Protection**: Improved offering chest protection with better security
+- **🚨 Emergency Cleanup**: Enhanced cleanup methods for safer plugin removal
+- **⚙️ Configuration Expansion**: Added comprehensive sleep prevention options
+- **🔍 Debug System**: New debug options for chest protection and sleep systems
+- **📜 MIT License**: Changed from GPL to MIT for broader compatibility
+- **🔧 Version Compatibility**: Improved spawn point setting with fallback methods
 
 ### 📈 Performance Optimizations
 - **Memory Management**: Bounded collections with LRU eviction
@@ -109,7 +111,7 @@ The plugin intelligently adjusts challenge based on:
 ## 📚 Documentation
 
 ### 🔗 Quick Links
-- **[📖 Complete Wiki](docs/WIKI.md)** - Comprehensive guide to everything
+- **[📖 Complete Wiki](docs/DIVINE_HORDES_WIKI.md)** - Comprehensive guide to everything
 - **[⚙️ Configuration](docs/CONFIGURATION.md)** - Detailed setup options
 - **[🖥️ Commands & Permissions](docs/COMMANDS.md)** - Complete command reference
 - **[🎮 Gameplay Guide](docs/GAMEPLAY.md)** - Strategies and tips
@@ -131,15 +133,15 @@ The plugin intelligently adjusts challenge based on:
 <div align="center">
 
 ### 🖥️ Control Panel GUI
-
+![GUI Screenshot](docs/images/gui-control-panel.png)
 *Comprehensive control panel with real-time statistics*
 
 ### ⚔️ Combat Action
-
+![Combat Screenshot](docs/images/combat-action.png)
 *Enhanced mobs with damage feedback system*
 
 ### 📊 Admin Tools
-
+![Admin Screenshot](docs/images/admin-panel.png)
 *Professional admin controls with performance monitoring*
 
 </div>
@@ -190,8 +192,13 @@ We welcome contributions! Check out our [Contributing Guide](CONTRIBUTING.md) fo
 
 ## 📜 Version History
 
-### v2.4.0 (Current)
-- **Production Ready**: Complete memory management and optimization
+### v2.5.0 (Current)
+- **Sleep Prevention System**: Strategic night mechanics with spawn point preservation
+- **Enhanced Block Protection**: Improved offering chest security system
+- **Emergency Cleanup**: Enhanced plugin removal safety
+- **MIT License**: Broader compatibility and easier integration
+
+### v2.4.0
 - **Combat Enhancement**: Real-time damage feedback and spawn optimization
 - **Balance Updates**: Refined difficulty and reward systems
 - **Compatibility**: Java 17-21+ and Minecraft 1.18.2-1.21.5
@@ -205,11 +212,17 @@ We welcome contributions! Check out our [Contributing Guide](CONTRIBUTING.md) fo
 
 ---
 
+## 👨‍💻 Developers
+
+**Wonderfully Evil** (Minecraft: RyanEthos & ImLadyDeath)
+- Expert team in cooperative Minecraft plugin development
+- Creators of immersive AI-driven gameplay experiences
+- Dedicated to the Minecraft community since 2024
+- Specializing in innovative challenge mechanics
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 🙏 Acknowledgments
 
@@ -228,7 +241,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ for the Minecraft community**
+**Created with ❤️ by Wonderfully Evil (RyanEthos & ImLadyDeath)**
 
 ![Footer](https://img.shields.io/badge/Divine%20Hordes-Epic%20Challenges%20Await-gold?style=for-the-badge)
 
