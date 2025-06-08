@@ -73,6 +73,33 @@ Divine Hordes transforms your Minecraft server into an epic battleground where p
 4. **⏰ Race Against Time** - 30 minutes to gather and deliver items
 5. **🏆 Success or Consequences** - Rewards for success, chaos for failure
 
+### 📦 **Bounty Box System**
+Craft a chest to delay the next horde by 30 minutes!:
+
+**🛠️ Crafting Recipe:**
+```
+[Iron] [Iron] [Iron]
+[Iron] [Chest] [Iron]
+[Iron] [Iron] [Iron]
+= 1x Bounty Box
+```
+
+**⚡ Strategic Mechanics:**
+- **⏰ Fixed 30-Minute Extension**: Provides exactly 30 minutes of additional time
+- **🚫 Non-Stackable**: Only one bounty box can be active per event
+- **📍 Placement Strategy**: Must be placed in loaded chunks to function properly
+- **✨ Visual Indicators**: Creates unique spiral particle effects when active
+- **💥 Destruction Fallback**: If destroyed, provides 3-minute emergency timer
+- **🎯 Optimal Timing**: Best used when 5-10 minutes remain on main timer
+
+**💡 Pro Tips:**
+- Protect with defensive structures to prevent mob destruction
+- Coordinate with team before placement for maximum effectiveness
+- Use as last resort when resources are almost complete but time is short
+- Use to pause horde spawning for long outings (take one with you just in case!)
+
+
+
 ### 🗡️ Combat System
 - **Smart Spawning**: Mobs appear 20-40 blocks away for tactical engagement
 - **Damage Feedback**: Real-time action bar showing damage dealt and mob HP
